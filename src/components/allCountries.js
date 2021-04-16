@@ -6,12 +6,10 @@ import React from 'react';
 
 const AllCountries = (props) => {
    const allData = props.allData;
-    // console.log(allData);
-    return (
+        return (
         <div className = "countries"> 
         {allData.map((obj, index) => {
-            // console.log(obj);
-            return <div className = "oneCountry">
+             return <div className = "oneCountry">
             <img src = {obj["flag"]} alt = "flag" />
             <p className = "nameC" key = {index}> {obj["name"]} </p>
             <div className = "info">
