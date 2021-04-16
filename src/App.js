@@ -4,8 +4,7 @@ import AllCountryFiles from './components/allCountryFiles';
 import Data from './Data.json';
 
 function App() {
-  console.log(Data);
-  return (
+    return (
     <div className="App">
       <AllCountryFiles />
     </div>
