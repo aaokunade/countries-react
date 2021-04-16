@@ -9,12 +9,19 @@
 img {
   width: 15rem;
   height: 10rem;
+  /* border-radius: 0.5rem; */
+  /* padding-top: 0rem; */
 }
 
 .oneCountry {
+  /* display: flex; */
+  /* position: top; */
   width: 15rem;
   border: 0.1rem solid navy;
   margin-bottom: 6rem;
+  border-radius: 0.3rem;
+  /* background-color: blue; */
+  box-shadow: 0.25rem 0.5rem #f7f4f4;
   }
 
   .nameC {
@@ -23,9 +30,14 @@ img {
   }
 
   .info {
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 0.5rem;
   }
 
-
+.regionsearch {
+  display: flex;
+  justify-content: space-between;
+  /* margin: auto; */
+  padding: 2rem 16rem 0rem 3rem; 
+}
 
