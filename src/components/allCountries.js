@@ -5,22 +5,23 @@ import React from 'react';
 
 
 const AllCountries = (props) => {
-   const allData = props.allData
+   const allData = props.allData;
+    // console.log(allData);
     return (
-    <div className = "countries"> 
+        <div className = "countries"> 
         {allData.map((obj, index) => {
-            console.log(obj);
-            return <div className = "oneCountry card">
-            <img className = "card-img-top" src = {obj["flag"]} alt = "flag" />
+            // console.log(obj);
+            return <div className = "oneCountry">
+            <img src = {obj["flag"]} alt = "flag" />
             <p className = "nameC" key = {index}> {obj["name"]} </p>
             <div className = "info">
-            <p> Population: {obj["population"]} </p>
-            <p> Region:  {obj["region"]} </p>
-            <p> Capital: {obj["capital"]} </p>
+            <p> <strong>Population:</strong> {obj["population"]} </p>
+            <p> <strong>Region:</strong>  {obj["region"]} </p>
+            <p> <strong>Capital:</strong> {obj["capital"]} </p>
             </div>
             </div>
         } )}
-    </div> 
+    </div>
     )   
 }
 
